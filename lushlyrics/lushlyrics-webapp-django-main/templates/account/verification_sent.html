@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="https://cdn.discordapp.com/icons/715958380556058684/773d6583cd1d7aef41e701783d353aef.webp?size=128" type="image/x-icon">
+	<meta name="description" content="Play your playlists and favourite tracks, albums, and artists">
+	<meta name="keywords" content="music, playlists, convert, sync, stream">
+
+	<link rel="stylesheet" href="{% static 'formStyle.css' %}">
+	<title>Verify your email - Youttify</title>
+</head>
+
+<body>
+	<div class="verification_header">
+		<a href="/" target="_blank">
+			<h1 class="label center-align">Youttify</h1>
+		</a>
+	</div>
+
+	<div class="verification_body">
+		<div class="login_form">
+			<span class="label signup-title center-align">Verify your email address</span>
+			<p class="label center-align">We’ve sent a confirmation email to your inbox. <br> Please click the link to activate your account.</p>
+
+			<p class="label center-align">Didn’t receive the email? Check your spam folder or <a href="{% url 'account_login' %}">try logging in</a>.</p>
+		</div>
+	</div>
+</body>
+
+</html>
